@@ -38,15 +38,15 @@ lcd.init();
 
 This Library is compatible whit the standar [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal) Arduino Library. You can view the reference page to see details and examples. These are the functions supported by this library:
 
-    - [home](https://www.arduino.cc/en/Reference/LiquidCrystalHome)
-    - [clear](https://www.arduino.cc/en/Reference/LiquidCrystalClear)
-    - [setCursor](https://www.arduino.cc/en/Reference/LiquidCrystalSetCursor)
-    - [cursor](https://www.arduino.cc/en/Reference/LiquidCrystalCursor)
-    - [noCursor](https://www.arduino.cc/en/Reference/LiquidCrystalNoCursor)
-    - [noBlink](https://www.arduino.cc/en/Reference/LiquidCrystalNoBlink)
-    - [blink](https://www.arduino.cc/en/Reference/LiquidCrystalBlink)
-    - [noDisplay](https://www.arduino.cc/en/Reference/LiquidCrystalNoDisplay)
-    - [display](https://www.arduino.cc/en/Reference/LiquidCrystalDisplay)
+  - [home](https://www.arduino.cc/en/Reference/LiquidCrystalHome)
+  - [clear](https://www.arduino.cc/en/Reference/LiquidCrystalClear)
+  - [setCursor](https://www.arduino.cc/en/Reference/LiquidCrystalSetCursor)
+  - [cursor](https://www.arduino.cc/en/Reference/LiquidCrystalCursor)
+  - [noCursor](https://www.arduino.cc/en/Reference/LiquidCrystalNoCursor)
+  - [noBlink](https://www.arduino.cc/en/Reference/LiquidCrystalNoBlink)
+  - [blink](https://www.arduino.cc/en/Reference/LiquidCrystalBlink)
+  - [noDisplay](https://www.arduino.cc/en/Reference/LiquidCrystalNoDisplay)
+  - [display](https://www.arduino.cc/en/Reference/LiquidCrystalDisplay)
 
 ## CREDITS
 
