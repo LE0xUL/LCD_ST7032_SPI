@@ -22,7 +22,8 @@
 #define LCDST7032SPI_H
 
 #include "Arduino.h"
-#include "SPI.h"
+#include <SPI.h>
+#include "Print.h"
 
 // COMMANDS
 #define _LCD_CLEARDISPLAY_          0x01      // Write "20H" to DDRAM. and set DDRAM address to "00H" from AC
@@ -115,7 +116,7 @@
 #define _LCD_CONTRAST_C0_ON_        0x01
 
 
-class LCDST7032SPI {
+class LCDST7032SPI : public Print {
 
     public:
     //! Constructor for LCDST7032SPI class.
@@ -127,9 +128,6 @@ class LCDST7032SPI {
     LCDST7032SPI(uint8_t reset, uint8_t register_select, uint8_t cs);
 
     void init();      // Initially the LCD with the defaults settings
-    void write(char data);    // Print a character in the actual address
-    void print(char * text);   // Print a Text in the actual address
-    void print(char * text, byte uint8_t);   // Print a Text in the given address
     void home();
     void clear();
     void setCursor(uint8_t, uint8_t);
@@ -139,6 +137,10 @@ class LCDST7032SPI {
     void blink();
     void noDisplay();
     void display();
+
+    // void write(char data);    // Print a character in the actual address
+    virtual size_t write(uint8_t);
+    using Print::write;
 
     private:
     uint8_t _rst, _cs, _rs;

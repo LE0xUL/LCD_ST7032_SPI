@@ -71,25 +71,14 @@ void LCDST7032SPI::command(uint8_t data){
     delayMicroseconds(50);
 }
 
-void LCDST7032SPI::write(char data){
+inline size_t LCDST7032SPI::write(uint8_t data){
     digitalWrite(_cs, LOW);
     digitalWrite(_rs, HIGH);
     delayMicroseconds(10);
     SPI.transfer(data);
     digitalWrite(_cs, HIGH);
     delayMicroseconds(50);
-}
-
-void LCDST7032SPI::print(char * text){
-  for (uint8_t i = 0; text[i] != '\0'; i++)
-      LCDST7032SPI::write(text[i]);
-}
-
-void LCDST7032SPI::print(char * text, uint8_t addr){
-    addr += 0x80;   // additional bit set in DB7;
-    command(addr);
-    for (uint8_t i = 0; text[i] != '\0'; i++)
-        LCDST7032SPI::write(text[i]);
+    return 1; // assume sucess
 }
 
 void LCDST7032SPI::home(){

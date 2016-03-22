@@ -26,19 +26,27 @@ Include the headers:
 
 Instance a new object:
 ```
-LCDST7032SPI myLCD(_PIN_RST_, _PIN_RS_, _PIN_CS_);  // Pins MOSI and SCK are the Arduino Standar
+LCDST7032SPI lcd(_PIN_RST_, _PIN_RS_, _PIN_CS_);  // Pins MOSI and SCK are the Arduino Standar
 ```
 
 Inicialize the LCD with the standar config (inside the setup):
 ```
-myLCD.init();
+lcd.init();
 ```
 
-Getting Starter (Show a message):
-```
-myLCD.print("Hello Word",0);  // The second parameter is the address reference of the LCD
-```
+## Methods and Functions
 
+This Library is compatible whit the standar [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal) Arduino Library. You can view the reference page to see details and examples. These are the functions supported by this library:
+
+    - [home](https://www.arduino.cc/en/Reference/LiquidCrystalHome)
+    - [clear](https://www.arduino.cc/en/Reference/LiquidCrystalClear)
+    - [setCursor](https://www.arduino.cc/en/Reference/LiquidCrystalSetCursor)
+    - [cursor](https://www.arduino.cc/en/Reference/LiquidCrystalCursor)
+    - [noCursor](https://www.arduino.cc/en/Reference/LiquidCrystalNoCursor)
+    - [noBlink](https://www.arduino.cc/en/Reference/LiquidCrystalNoBlink)
+    - [blink](https://www.arduino.cc/en/Reference/LiquidCrystalBlink)
+    - [noDisplay](https://www.arduino.cc/en/Reference/LiquidCrystalNoDisplay)
+    - [display](https://www.arduino.cc/en/Reference/LiquidCrystalDisplay)
 
 ## CREDITS
 
