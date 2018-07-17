@@ -12,18 +12,18 @@ LCDSPI	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-init                KEYWORD2
-write               KEYWORD2
-print               KEYWORD2
-clear               KEYWORD2
-home                KEYWORD2
-setCursor           KEYWORD2
-cursor              KEYWORD2
-noCursor            KEYWORD2
-blink               KEYWORD2
-noBlink             KEYWORD2
-display             KEYWORD2
-noDisplay           KEYWORD2
+init	KEYWORD2
+write	KEYWORD2
+print	KEYWORD2
+clear	KEYWORD2
+home	KEYWORD2
+setCursor	KEYWORD2
+cursor	KEYWORD2
+noCursor	KEYWORD2
+blink	KEYWORD2
+noBlink	KEYWORD2
+display	KEYWORD2
+noDisplay	KEYWORD2
 
 ######################################
 # Instances (KEYWORD2)
